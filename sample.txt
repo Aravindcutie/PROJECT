@@ -1,0 +1,19 @@
+let the numbers denote separate tables
+
+1) username,password,type
+2) username, gender, age, dob, total_bookings, phno, gmail, nationality, address, pass_number
+3) username, names, ages, dobs, genders, phnos
+4) a_id, aname, acode, acity, acountry
+5) f_id, da_id, aa_id, d_time, a_time, av_seats
+6) book_id, username, bname, f_id, noofseats, b_date, b_time
+7) book_id, p_id, p_time, amount, method
+8) f_id, manu, model, last_ser, capacoty, damaged
+9) book_id, nname, ngender, nage, pass_no, seatno, f_id
+
+constraints:
+1) username(primary key)   --> 2)username,3)username,6)username (foreign key)
+4)a_id(primary key)         --> 5)da_id,6)aa_id (foreign key)
+8)f_id (primary key)        --> 5)f_id  (foreign key)
+7)book_id (primary key)     --> 6)book_id,9)book_id (foreign key)
+
+is this schema in 3NF?
